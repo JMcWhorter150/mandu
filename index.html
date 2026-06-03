@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Tiny Mandu Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <h1 id="page-title">A tiny mandu surprise</h1>
+          <p class="subtitle">A soft dumpling waits inside.</p>
+        </div>
+
+        <div class="stage" aria-live="polite">
+          <div class="pattern pattern-left" aria-hidden="true"></div>
+          <div class="pattern pattern-right" aria-hidden="true"></div>
+
+          <div class="confetti" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="steam" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="steamer" id="steamer">
+            <div class="lid" aria-hidden="true">
+              <div class="lid-handle"></div>
+              <div class="lid-band"></div>
+            </div>
+
+            <div class="mandu" aria-hidden="true">
+              <img class="mandu-image" src="assets/pink-bao-bun-no-eyes.png" alt="">
+              <span class="gaze-eye gaze-left"></span>
+              <span class="gaze-eye gaze-right"></span>
+              <span class="boop-pop pop-1">♡</span>
+              <span class="boop-pop pop-2">✦</span>
+              <span class="boop-pop pop-3">♡</span>
+            </div>
+
+            <div class="tray">
+              <div class="tray-rim"></div>
+              <div class="tray-body">
+                <span class="slat slat-1"></span>
+                <span class="slat slat-2"></span>
+                <span class="slat slat-3"></span>
+                <span class="slat slat-4"></span>
+              </div>
+              <div class="tray-foot"></div>
+            </div>
+          </div>
+
+          <button class="reveal-button" type="button" aria-controls="steamer" aria-expanded="false">
+            Open tray
+          </button>
+
+          <p class="reveal-message">It's a girl!</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
