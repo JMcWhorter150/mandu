@@ -10,7 +10,7 @@ button.addEventListener("click", () => {
   button.textContent = isOpen ? "Close tray" : "Open tray";
 });
 
-mandu.addEventListener("click", () => {
+function boopMandu() {
   if (!steamer.classList.contains("is-open")) {
     return;
   }
@@ -19,6 +19,11 @@ mandu.addEventListener("click", () => {
   window.requestAnimationFrame(() => {
     mandu.classList.add("is-booped");
   });
+}
+
+mandu.addEventListener("pointerdown", (event) => {
+  event.preventDefault();
+  boopMandu();
 });
 
 mandu.addEventListener("animationend", (event) => {
